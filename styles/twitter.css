@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+html {
+  color: white !important;
+}
+
+.root.timeline.twitter-timeline {
+  width: 100%;
+}
+
+.footer {
+  display: none;
+}
+
+.header .avatar {
+  top: 5px;
+  left: -100px;
+  width: 73px;
+  height: 73px;
+}
+
+.root.twitter-timeline p,
+.root.twitter-timeline a,
+.root.twitter-timeline ol,
+.root.twitter-timeline ul,
+.root.twitter-timeline li,
+.root.twitter-timeline .p-author .p-name {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+.root.twitter-timeline .e-entry-content a {
+  color: #ff6962;
+}
+.root.twitter-timeline .p-author .p-nickname {
+  font-size: 18px;
+  opacity: 0.6;
+}
+.root.twitter-timeline .tweet .retweet-credit {
+  display: none;
+}
+
+.root.twitter-timeline .tweet {
+  padding: 0 0 0 100px;
+  margin: 10px 10px 50px 10px;
+  transition: opacity .5s;
+}
+.root.twitter-timeline .tweet:nth-child(n+4) {
+  opacity: 0;
+}
+
+.root.twitter-timeline a,
+.root.twitter-timeline a:visited {
+  text-decoration: underline;
+}
+
+.root.twitter-timeline .u-url,
+.root.twitter-timeline .expand,
+.root.twitter-timeline .hashtag,
+.root.twitter-timeline .profile {
+  text-decoration: none;
+}
+
+.root.twitter-timeline .u-url:hover,
+.root.twitter-timeline .expand:hover,
+.root.twitter-timeline .hashtag:hover,
+.root.twitter-timeline .profile:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/*.u-photo,*/
+/*.full-name,*/
+.inline-media {
+  display: none;
+}

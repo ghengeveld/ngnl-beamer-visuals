@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.slide,
+.content,
+.trigons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.trigons {
+  opacity: 0.7;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.content::after {
+  content: "";
+  background: url('../images/angular.png') no-repeat center;
+  background-size: 60%;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.column {
+  flex: 1;
+}
+
+.column.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.left img, .column.right img {
+  width: 45%;
+}
+
+.row.top img {
+  width: 29%;
+  margin: 5%;
+  vertical-align: middle;
+}
+
+.row.bottom img {
+  width: 22%;
+  margin: 5% 3%;
+  vertical-align: middle;
+}
+
+.row.bottom img.logo-codeguild {
+  width: 18%;
+}
+
+.row.bottom img.logo-42 {
+  width: 12%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 100px;
+}
+h1 strong {
+  font-size: 130px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.twitter-timeline {
+  width: 90%!important;
+  height: 570px;
+}
+
+.schedule {
+  height: 550px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.schedule th {
+  font-weight: 300;
+}
+
+#interval {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+}
