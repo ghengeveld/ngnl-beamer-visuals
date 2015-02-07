@@ -1,0 +1,6 @@
+{
+  "name": "ngnl-visuals",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "n"
+}
