@@ -91,11 +91,16 @@
       timer = undefined;
     }
 
-    document.onkeypress = function (e) {
+    document.onkeyup = function (e) {
       e = e || window.event;
       var key = (typeof e.which == "number") ? e.which : e.keyCode;
-      console.log(key);
       switch (key) {
+        case 37: // left
+          go(current == 0 ? slides.length - 1 : current - 1);
+          break;
+        case 39: // right
+          go(current == slides.length - 1 ? 0 : current + 1);
+          break;
         case 49: // 1
         case 50: // 2
           stop();
