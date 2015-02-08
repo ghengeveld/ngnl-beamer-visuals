@@ -92,16 +92,6 @@ h3 {
   height: 570px;
 }
 
-.schedule {
-  height: 550px;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: left;
-}
-.schedule th {
-  font-weight: 300;
-}
-
 #interval {
   position: absolute;
   bottom: 0;
