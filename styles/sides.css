@@ -16,10 +16,6 @@ html, body {
   bottom: 0;
 }
 
-.trigons {
-  opacity: 0.7;
-}
-
 .content {
   display: flex;
   align-items: center;
