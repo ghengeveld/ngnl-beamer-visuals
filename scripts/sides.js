@@ -95,17 +95,6 @@
       e = e || window.event;
       var key = (typeof e.which == "number") ? e.which : e.keyCode;
       switch (key) {
-        case 37: // left
-          go(current == 0 ? slides.length - 1 : current - 1);
-          break;
-        case 39: // right
-          go(current == slides.length - 1 ? 0 : current + 1);
-          break;
-        case 49: // 1
-        case 50: // 2
-          stop();
-          go(key - 49);
-          break;
         case 32: // space
           if (timer) {
             stop();
@@ -113,11 +102,22 @@
             start();
           }
           break;
-        case 43: // +
+        case 37: // left
+          go(current == 0 ? slides.length - 1 : current - 1);
+          break;
+        case 39: // right
+          go(current == slides.length - 1 ? 0 : current + 1);
+          break;
+        case 38: // up
           updateInterval(interval + 10000);
           break;
-        case 45: // -
+        case 40: // down
           updateInterval(interval - 10000);
+          break;
+        case 49: // 1
+        case 50: // 2
+          stop();
+          go(key - 49);
           break;
       }
     };
