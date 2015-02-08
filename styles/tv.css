@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.slide,
+.content,
+.trigons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slide:nth-child(1),
+.slide:nth-child(3) {
+  color: #060610;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 30px;
+  justify-content: center;
+}
+
+.centered {
+  width: 60%;
+}
+
+.centered img {
+  width: 80%;
+}
+
+.column {
+  flex: 1;
+}
+
+.column.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.center img {
+  width: 30%;
+}
+
+.column.left img, .column.right img {
+  width: 45%;
+}
+
+.row.top img {
+  width: 29%;
+  margin: 5%;
+  vertical-align: middle;
+}
+
+.row.bottom img {
+  width: 22%;
+  margin: 5% 3%;
+  vertical-align: middle;
+}
+
+.row.bottom img.logo-codeguild {
+  width: 18%;
+}
+
+.row.bottom img.logo-42 {
+  width: 12%;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 160px;
+}
+h1 strong {
+  font-size: 160px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 80px;
+  line-height: 80px;
+}
+h3 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.twitter-timeline {
+  width: 90%!important;
+  height: 570px;
+}
+
+#interval {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+}
